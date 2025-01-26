@@ -1,0 +1,60 @@
+{
+  "author": {
+    "email": "trejgun@gmail.com",
+    "name": "TrejGun",
+    "url": "https://ethberry.io/"
+  },
+  "bugs": {
+    "url": "https://github.com/ethberry/mui-packages-eth/issues"
+  },
+  "dependencies": {
+    "@ethberry/mui-inputs-core": "9.0.1",
+    "@ethberry/mui-inputs-mask": "7.0.2",
+    "@ethberry/provider-test-id": "2.0.1",
+    "@mui/styles": "6.4.1",
+    "react-number-format": "5.4.3"
+  },
+  "description": "react widget",
+  "devDependencies": {
+    "@mui/material": "6.4.1",
+    "@storybook/react": "8.5.1",
+    "@types/react": "19.0.8",
+    "ethers": "5.7.2",
+    "react": "19.0.0",
+    "react-hook-form": "7.54.2",
+    "react-intl": "7.1.5"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [],
+  "license": "UNLICENSED",
+  "main": "./dist/index.js",
+  "name": "@ethberry/mui-inputs-mask-eth",
+  "peerDependencies": {
+    "@mui/material": "^6.0.0",
+    "ethers": "^5.6.0",
+    "react": "^19.0.0",
+    "react-hook-form": "^7.0.0",
+    "react-intl": "^7.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ethberry/mui-packages-eth"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --fix",
+    "prebuild": "rimraf dist/",
+    "prepare": "npm run build",
+    "preversion": "npm run build && npm run test",
+    "test": "exit 0"
+  },
+  "sideEffects": false,
+  "title": "-=EthBerry Studio=-",
+  "types": "./dist/index.d.ts",
+  "version": "7.0.1"
+}

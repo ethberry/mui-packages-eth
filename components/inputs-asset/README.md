@@ -1,0 +1,1 @@
+# MUI inputs: asset

@@ -1,0 +1,96 @@
+{
+  "author": {
+    "email": "trejgun@gmail.com",
+    "name": "TrejGun",
+    "url": "https://ethberry.io/"
+  },
+  "bugs": {
+    "url": "https://github.com/ethberry/mui-packages-eth/issues"
+  },
+  "dependencies": {
+    "@ethberry/firebase": "2.0.2",
+    "@ethberry/mui-icons": "3.0.1",
+    "@ethberry/mui-page-layout": "4.0.1",
+    "@ethberry/provider-collection": "2.0.1",
+    "@ethberry/react-hooks": "3.0.1",
+    "@ethberry/redux": "1.0.1",
+    "@ethberry/types-jwt": "0.4.9",
+    "@ethberry/utils": "1.6.1",
+    "@ethersproject/networks": "5.7.1",
+    "@particle-network/auth": "1.3.1",
+    "@particle-network/chains": "1.14.15",
+    "@particle-network/provider": "1.3.2",
+    "@reduxjs/toolkit": "2.5.0",
+    "@web3-react/empty": "8.2.3",
+    "@web3-react/metamask": "8.2.4",
+    "@web3-react/network": "8.2.3",
+    "@web3-react/types": "8.2.3",
+    "@web3-react/url": "8.2.3",
+    "@web3-react/walletconnect-v2": "8.5.1",
+    "firebase": "11.2.0",
+    "uuid": "11.0.5"
+  },
+  "description": "react wallet provider",
+  "devDependencies": {
+    "@ethberry/constants": "0.13.6",
+    "@ethberry/provider-api": "8.0.2",
+    "@ethberry/provider-popup": "2.0.2",
+    "@ethberry/provider-user": "7.0.2",
+    "@ethberry/types-blockchain": "1.3.6",
+    "@mui/icons-material": "6.4.1",
+    "@mui/material": "6.4.1",
+    "@mui/styles": "6.4.1",
+    "@types/react": "19.0.8",
+    "@types/uuid": "10.0.0",
+    "@web3-react/core": "8.2.3",
+    "ethers": "5.7.2",
+    "notistack": "3.0.2",
+    "react": "19.0.0",
+    "react-intl": "7.1.5"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [],
+  "license": "UNLICENSED",
+  "main": "./dist/index.js",
+  "name": "@ethberry/provider-wallet",
+  "peerDependencies": {
+    "@ethberry/constants": "^0.13.0",
+    "@ethberry/provider-api": "^8.0.0",
+    "@ethberry/provider-popup": "^0.0.0",
+    "@ethberry/provider-user": "^7.0.0",
+    "@ethberry/react-hooks": "^2.0.0 || ^3.0.0",
+    "@ethberry/redux": "^0.3.0 || ^1.0.0",
+    "@ethberry/types-blockchain": "^1.0.0",
+    "@mui/icons-material": "^6.0.0",
+    "@mui/lab": "^6.0.0-beta.0",
+    "@mui/material": "^6.0.0",
+    "@mui/styles": "^6.0.0",
+    "@web3-react/core": "^8.0.0",
+    "ethers": "^5.6.0",
+    "notistack": "^3.0.0",
+    "react": "^19.0.0",
+    "react-intl": "^7.0.0",
+    "uuid": "^11.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ethberry/mui-packages-eth"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --fix",
+    "prebuild": "rimraf dist/",
+    "prepare": "npm run build",
+    "preversion": "npm run build && npm run test",
+    "test": "exit 0"
+  },
+  "sideEffects": false,
+  "title": "-=EthBerry Studio=-",
+  "types": "./dist/index.d.ts",
+  "version": "5.0.1"
+}
