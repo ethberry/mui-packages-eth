@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.3](https://github.com/ethberry/mui-packages-eth/compare/@ethberry/provider-wallet@5.0.2...@ethberry/provider-wallet@5.0.3) (2025-01-26)
+
+**Note:** Version bump only for package @ethberry/provider-wallet
+
 ## 5.0.2 (2025-01-26)
 
 **Note:** Version bump only for package @ethberry/provider-wallet
