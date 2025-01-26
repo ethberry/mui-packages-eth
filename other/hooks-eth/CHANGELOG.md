@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 3.0.2 (2025-01-26)
+
+**Note:** Version bump only for package @ethberry/react-hooks-eth
+
 ## [3.0.1](https://github.com/ethberry/mui-packages/compare/@ethberry/react-hooks-eth@3.0.0...@ethberry/react-hooks-eth@3.0.1) (2025-01-26)
 
 ### Bug Fixes
