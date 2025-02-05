@@ -18,8 +18,8 @@
   },
   "description": "react 1inch",
   "devDependencies": {
-    "@mui/icons-material": "6.4.2",
-    "@mui/material": "6.4.2",
+    "@mui/icons-material": "6.4.3",
+    "@mui/material": "6.4.3",
     "@types/react": "19.0.8",
     "@types/react-window": "1.8.8",
     "ethers": "5.7.2",
