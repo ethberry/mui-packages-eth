@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.4](https://github.com/ethberry/mui-packages-eth/compare/@ethberry/mui-inputs-asset@4.0.3...@ethberry/mui-inputs-asset@4.0.4) (2025-02-05)
+
+### Bug Fixes
+
+- **deps:** update [@ethberry](https://github.com/ethberry) packages ([4ddb6ea](https://github.com/ethberry/mui-packages-eth/commit/4ddb6ea6bd8f53811f4c74f7b406f4218c0a8087))
+- **deps:** update [@mui](https://github.com/mui) packages to v6.4.2 ([ec6aea4](https://github.com/ethberry/mui-packages-eth/commit/ec6aea498d145bf681187b42d69ca2dc174d6831))
+- **deps:** update [@mui](https://github.com/mui) packages to v6.4.3 ([574e6da](https://github.com/ethberry/mui-packages-eth/commit/574e6dac302de073f3944d012c14fcb6ef403bd8))
+
 ## [4.0.3](https://github.com/ethberry/mui-packages-eth/compare/@ethberry/mui-inputs-asset@4.0.2...@ethberry/mui-inputs-asset@4.0.3) (2025-01-26)
 
 **Note:** Version bump only for package @ethberry/mui-inputs-asset

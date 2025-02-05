@@ -11,7 +11,7 @@
     "@ethberry/constants": "0.13.6",
     "@ethberry/mui-inputs-core": "9.0.2",
     "@ethberry/mui-inputs-entity": "9.0.2",
-    "@ethberry/mui-inputs-mask-eth": "7.0.3",
+    "@ethberry/mui-inputs-mask-eth": "7.0.4",
     "@ethberry/react-hooks": "3.0.2",
     "@ethberry/types-blockchain": "1.3.6",
     "@ethberry/yup-rules-eth": "2.1.43"
@@ -63,5 +63,5 @@
   "sideEffects": false,
   "title": "-=EthBerry Studio=-",
   "types": "./dist/index.d.ts",
-  "version": "4.0.3"
+  "version": "4.0.4"
 }
