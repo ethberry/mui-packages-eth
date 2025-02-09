@@ -23,7 +23,7 @@
     "@web3-react/core": "8.2.3",
     "notistack": "3.0.2",
     "react": "19.0.0",
-    "react-intl": "7.1.5"
+    "react-intl": "7.1.6"
   },
   "engines": {
     "node": ">=22"
@@ -36,7 +36,7 @@
     "@web3-react/core": "^8.0.0",
     "notistack": "^3.0.0",
     "react": "^19.0.0",
-    "react-intl": "7.1.5"
+    "react-intl": "7.1.6"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"

@@ -27,7 +27,7 @@
     "@web3-react/types": "8.2.3",
     "@web3-react/url": "8.2.3",
     "@web3-react/walletconnect-v2": "8.5.1",
-    "firebase": "11.2.0",
+    "firebase": "11.3.0",
     "uuid": "11.0.5"
   },
   "description": "react wallet provider",
@@ -46,7 +46,7 @@
     "ethers": "5.7.2",
     "notistack": "3.0.2",
     "react": "19.0.0",
-    "react-intl": "7.1.5"
+    "react-intl": "7.1.6"
   },
   "engines": {
     "node": ">=22"
