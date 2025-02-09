@@ -8,11 +8,11 @@
     "url": "https://github.com/ethberry/mui-packages-eth/issues"
   },
   "dependencies": {
-    "@ethberry/constants": "0.13.6",
-    "@ethberry/mui-inputs-core": "9.0.2",
-    "@ethberry/mui-inputs-entity": "9.0.2",
+    "@ethberry/constants": "0.13.7",
+    "@ethberry/mui-inputs-core": "9.0.3",
+    "@ethberry/mui-inputs-entity": "9.0.3",
     "@ethberry/mui-inputs-mask-eth": "7.0.4",
-    "@ethberry/react-hooks": "3.0.2",
+    "@ethberry/react-hooks": "3.0.3",
     "@ethberry/types-blockchain": "1.3.6",
     "@ethberry/yup-rules-eth": "2.1.43"
   },
