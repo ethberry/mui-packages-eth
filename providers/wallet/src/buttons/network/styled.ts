@@ -1,12 +1,6 @@
 import { Badge, ListItemIcon, SvgIcon } from "@mui/material";
-import { SxProps, styled } from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 import { Circle } from "@mui/icons-material";
-
-export const spinnerMixin: SxProps = {
-  svg: {
-    color: "#FFFFFF",
-  },
-};
 
 export const StyledBadge = styled(Badge)(({ theme }) => ({
   ".MuiBadge-badge": {

@@ -6,7 +6,7 @@ import { ProgressOverlay } from "@ethberry/mui-page-layout";
 import { useUser } from "@ethberry/provider-user";
 import { useAppSelector } from "@ethberry/redux";
 
-import { spinnerMixin, StyledBadge, StyledCircle, StyledListItemIcon, StyledSvgIcon } from "./styled";
+import { StyledBadge, StyledCircle, StyledListItemIcon, StyledSvgIcon } from "./styled";
 import { getChainIconParams } from "./utils";
 import { SANDBOX_CHAINS } from "../../provider";
 import { walletSelectors } from "../../reducer";
@@ -41,7 +41,7 @@ export const NetworkButton: FC = () => {
   const { chainIcon, viewBox } = getChainIconParams(chainId);
 
   return (
-    <ProgressOverlay isLoading={isLoading} spinnerSx={spinnerMixin}>
+    <ProgressOverlay isLoading={isLoading}>
       <Tooltip title={networks[chainId].chainName}>
         <StyledBadge color="primary" badgeContent={<StyledCircle />} invisible={!isSandbox}>
           <IconButton
