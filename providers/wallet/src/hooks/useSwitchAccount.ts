@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
 import { Web3ContextType, useWeb3React } from "@web3-react/core";
-import { getAuth, signInWithCustomToken } from "firebase/auth";
+import { getAuth, signInWithCustomToken, User } from "firebase/auth";
 import { v4 } from "uuid";
+import { useNavigate } from "react-router";
 
 import { phrase } from "@ethberry/constants";
 import firebase from "@ethberry/firebase";
@@ -10,6 +11,7 @@ import { useApiCall } from "@ethberry/react-hooks";
 import { useAppSelector, useAppDispatch } from "@ethberry/redux";
 import type { IMetamaskDto, IWalletConnectDto } from "@ethberry/types-jwt";
 import { collectionActions } from "@ethberry/provider-collection";
+import { useApi } from "@ethberry/provider-api";
 
 import { TConnectors, walletSelectors } from "../reducer";
 import { useWalletInit } from "./useWalletInit";
@@ -27,6 +29,8 @@ const fetchUrlByActiveConnector: {
 export const useSwitchAccount = () => {
   const authFb = getAuth(firebase);
   const user = useUser<any>();
+  const navigate = useNavigate();
+  const api = useApi();
   const { account = "", isActive, provider, connector } = useWeb3React();
 
   const currentWallet = useRef<string>("");
@@ -41,6 +45,8 @@ export const useSwitchAccount = () => {
   const { setNeedRefresh } = collectionActions;
   const isUserAuthenticated = user.isAuthenticated();
 
+  const isLoginPage = window.location.pathname.includes("/login");
+
   const handleDisconnect = async () => {
     await user.logOut();
   };
@@ -54,12 +60,27 @@ export const useSwitchAccount = () => {
     }
   };
 
+  const logIn = async (user: User) => {
+    const accessToken = await user.getIdToken(true);
+    const now = Date.now();
+    api.setToken({
+      accessToken,
+      accessTokenExpiresAt: now + 1000 * 60 * 60,
+      refreshToken: "",
+      refreshTokenExpiresAt: now + 1000 * 60 * 60,
+    });
+    if (isLoginPage) {
+      void navigate(window.location.pathname);
+    }
+  };
+
   const handleTokenVerified = async (token: string) => {
     if (!token) {
       return;
     }
     await signInWithCustomToken(authFb, token);
-    await user.logIn(void 0, location.pathname).catch(e => {
+    const userCredentials = await signInWithCustomToken(authFb, token);
+    await logIn(userCredentials.user).catch(e => {
       console.error("login error", e);
       void handleDisconnect();
     });
