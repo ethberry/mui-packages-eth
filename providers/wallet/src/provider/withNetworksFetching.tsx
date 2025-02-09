@@ -45,15 +45,7 @@ export const withNetworksFetching = <P extends IWithDataFetchingProps>(WrappedCo
     }, []);
 
     if (isLoading) {
-      return (
-        <ProgressOverlay
-          spinnerSx={{
-            position: "static",
-            minHeight: "100vh",
-          }}
-          isLoading={isLoading}
-        />
-      );
+      return <ProgressOverlay isLoading={isLoading} />;
     }
 
     return <WrappedComponent {...props} />;
