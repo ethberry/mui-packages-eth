@@ -1,0 +1,47 @@
+{
+  "author": {
+    "email": "trejgun@gmail.com",
+    "name": "TrejGun",
+    "url": "https://ethberry.io/"
+  },
+  "bugs": {
+    "url": "https://github.com/ethberry/mui-packages/issues"
+  },
+  "description": "react icons",
+  "devDependencies": {
+    "@mui/material": "6.4.4",
+    "@storybook/react": "8.5.6",
+    "@types/react": "19.0.9",
+    "react": "19.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [],
+  "license": "UNLICENSED",
+  "main": "./dist/index.js",
+  "name": "@ethberry/mui-icons-eth",
+  "peerDependencies": {
+    "@mui/material": "^6.0.0",
+    "react": "^19.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ethberry/mui-packages"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --fix",
+    "prebuild": "rimraf dist/",
+    "prepare": "npm run build",
+    "preversion": "npm run build && npm run test",
+    "test": "exit 0"
+  },
+  "sideEffects": false,
+  "title": "-=EthBerry Studio=-",
+  "types": "./dist/index.d.ts",
+  "version": "3.0.2"
+}
