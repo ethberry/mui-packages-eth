@@ -1,10 +1,6 @@
 import { FC } from "react";
 import { Link, SxProps, Theme, Tooltip, useMediaQuery } from "@mui/material";
-import { useWeb3React } from "@web3-react/core";
-
-import type { INetwork } from "@ethberry/types-blockchain";
-import { useAppSelector } from "../../../../../mui-packages/other/redux/src";
-import { walletSelectors } from "@ethberry/provider-wallet";
+import { useChains, useChainId } from "wagmi";
 
 export interface ITxHashLinkProps {
   hash: string;
@@ -14,11 +10,12 @@ export interface ITxHashLinkProps {
 
 export const TxHashLink: FC<ITxHashLinkProps> = props => {
   const { hash, length = 16, sx = [] } = props;
-
-  const { chainId = 1 } = useWeb3React();
-  const networks = useAppSelector<Record<number, INetwork>>(walletSelectors.networksSelector);
+  const chains = useChains();
+  const chainId = useChainId();
 
   const isSmallScreen = useMediaQuery<Theme>(theme => theme.breakpoints.down("sm"));
+
+  const currentChain = chains.find(chain => chain.id === chainId);
 
   if (!hash) {
     return null;
@@ -28,13 +25,13 @@ export const TxHashLink: FC<ITxHashLinkProps> = props => {
     ? `${hash.slice(0, 5)}...${hash.slice(-4)}`
     : hash.substring(0, length).concat("...");
 
-  if (!networks[chainId]?.blockExplorerUrls?.length) {
+  if (!currentChain?.blockExplorers) {
     return formattedHash;
   }
 
   return (
     <Tooltip title={hash}>
-      <Link target={"_blank"} href={`${networks[chainId].blockExplorerUrls[0]}/tx/${hash}`} sx={sx}>
+      <Link target={"_blank"} href={`${currentChain.blockExplorers.default.url}/tx/${hash}`} sx={sx}>
         {formattedHash}
       </Link>
     </Tooltip>
