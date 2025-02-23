@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 4.1.0 (2025-02-23)
+
+### Bug Fixes
+
+- **deps:** update [@mui](https://github.com/mui) packages to v6.4.5 ([1366cdf](https://github.com/ethberry/mui-packages/commit/1366cdf4103fd2a389cb1c3b71bf289864b35b1b))
+- **deps:** update all non-major dependencies ([bdb0652](https://github.com/ethberry/mui-packages/commit/bdb0652b23de23e61ac37441c98aab205f49efbe))
+
+### Features
+
+- migrate from react-web3 to wagmi ([6002dbd](https://github.com/ethberry/mui-packages/commit/6002dbd0d7bbdeb60a9d3023703c1c49b5ba5a49))
+
 ## [3.0.3](https://github.com/ethberry/mui-packages/compare/@ethberry/mui-scanner@3.0.2...@ethberry/mui-scanner@3.0.3) (2025-02-09)
 
 ### Bug Fixes

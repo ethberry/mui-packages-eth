@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 3.0.3 (2025-02-23)
+
+### Bug Fixes
+
+- **deps:** update [@mui](https://github.com/mui) packages to v6.4.5 ([1366cdf](https://github.com/ethberry/mui-packages/commit/1366cdf4103fd2a389cb1c3b71bf289864b35b1b))
+- **deps:** update all non-major dependencies ([bdb0652](https://github.com/ethberry/mui-packages/commit/bdb0652b23de23e61ac37441c98aab205f49efbe))
+
 ## 3.0.2 (2025-02-05)
 
 ### Bug Fixes

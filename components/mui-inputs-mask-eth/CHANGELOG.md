@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.6](https://github.com/ethberry/mui-packages-eth/compare/@ethberry/mui-inputs-mask-eth@7.0.5...@ethberry/mui-inputs-mask-eth@7.0.6) (2025-02-23)
+
+### Bug Fixes
+
+- **deps:** update [@ethberry](https://github.com/ethberry) packages ([b4b80b1](https://github.com/ethberry/mui-packages-eth/commit/b4b80b13c9db049126f5e49318469e7f52b68f5f))
+- **deps:** update [@mui](https://github.com/mui) packages to v6.4.5 ([1366cdf](https://github.com/ethberry/mui-packages-eth/commit/1366cdf4103fd2a389cb1c3b71bf289864b35b1b))
+- **deps:** update all non-major dependencies ([bdb0652](https://github.com/ethberry/mui-packages-eth/commit/bdb0652b23de23e61ac37441c98aab205f49efbe))
+
 ## [7.0.5](https://github.com/ethberry/mui-packages-eth/compare/@ethberry/mui-inputs-mask-eth@7.0.4...@ethberry/mui-inputs-mask-eth@7.0.5) (2025-02-09)
 
 ### Bug Fixes
