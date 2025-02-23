@@ -8,9 +8,9 @@
     "url": "https://github.com/ethberry/mui-packages-eth/issues"
   },
   "dependencies": {
-    "@ethberry/mui-inputs-core": "9.0.3",
-    "@ethberry/mui-inputs-mask": "7.0.4",
-    "@ethberry/provider-test-id": "2.0.2",
+    "@ethberry/mui-inputs-core": "9.0.6",
+    "@ethberry/mui-inputs-mask": "7.0.7",
+    "@ethberry/provider-test-id": "2.0.4",
     "@mui/styles": "6.4.5",
     "react-number-format": "5.4.3"
   },
