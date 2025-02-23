@@ -9,6 +9,6 @@
       "yes": true
     }
   },
-  "packages": ["components/*"],
+  "packages": ["components/*", "other/*"],
   "version": "independent"
 }
